@@ -46,13 +46,35 @@
     </div>
   </header>
   <main>
-    <template id="columns">
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel-2" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalLabel-2">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning" id="favorite-2">Favorite</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spinner-wrapper">
+      <div class="spinner-grow text-light" role="status"></div>
+      <p class="text-light"> Please wait...</p>
+    </div>
+    <template id="columns-2">
       <div class="col">
         <div class="card">
-          <img src="..." class="card-img-top crop" alt="" id="card-image">
+          <img src="..." class="card-img-top crop" alt="">
           <div class=" card-body text-center ">
-            <h2 class="card-title" id="card-h2">Placeholder</h2>
-            <p class="card-text" id="card-p"></p>
+            <h2 class="card-title">Placeholder</h2>
+            <p class="card-text"></p>
           </div>
         </div>
 
@@ -61,6 +83,9 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center" id="grid-place">
     </div>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
   <script src="./scripts/solar-system.js"></script>
   <script src="./scripts/moons.js"></script>
 </body>
